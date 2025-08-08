@@ -1,0 +1,195 @@
+/* Fuente */
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Orbitron:wght@400..900&display=swap");
+
+body {
+  font-family: "Alegreya", serif;
+  background-color: #76ddbc;
+  margin: 0;
+}
+
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #16503e;
+  padding: 10px 20px;
+  gap: 20px;
+}
+
+.img-icon {
+  max-width: 120px;
+  height: auto;
+}
+
+header h1 {
+  margin-bottom: 20px;
+}
+
+/* Menu */
+.navbar ul {
+  display: flex;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar ul li {
+  display: inline-block;
+  list-style: none;
+}
+
+.nav-link {
+  font-family: "Kanit", sans-serif;
+  font-size: 25px;
+  color: #29b3b3;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+/* Main */
+main {
+  padding: 40px 0;
+}
+
+/* Columnas alineadas verticalmmente */
+main .row {
+  align-items: center;
+}
+
+main .row .col img {
+  width: 100%;
+  max-width: 520px;
+  height: auto;
+  border-radius: 8px;
+  margin: 8px auto;
+}
+main p {
+  text-align: left;
+}
+.second {
+  background-color: #4a8b77;
+}
+/* Titulos */
+h1,
+h2,
+h3 {
+  font-family: "Orbitron", sans-serif;
+  color: #c2a504;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin: 0;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+/*  Parrafos */
+p {
+  font-family: "Kanit", sans-serif;
+  color: #000;
+  font-size: 20px;
+}
+
+p:hover {
+  color: #ac0101;
+}
+
+/* Boton Tickets FIFA */
+.btn-tickets {
+  display: inline-block;
+  font-family: "Orbitron", sans-serif;
+  border: 2px solid black;
+  text-decoration: none;
+  color: #1e00ca;
+  margin: 25px;
+  padding: 8px 15px;
+  border-radius: 5px;
+  background-color: rgb(202, 121, 0);
+}
+
+.btn-tickets:hover {
+  background-color: rgb(24, 168, 56);
+}
+
+/* FOOTER */
+.p-footer {
+  font-family: "Kanit", sans-serif;
+  font-size: 25px;
+  color: #000;
+  text-align: center;
+}
+
+/* Responsive */
+
+/* Tablet */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .img-icon {
+    max-width: 250px;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+
+  p {
+    font-size: 18px;
+    text-align: left;
+  }
+}
+
+/* Celular */
+@media (max-width: 576px) {
+  .img-icon {
+    max-width: 200px;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .btn-tickets {
+    width: 100%;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
