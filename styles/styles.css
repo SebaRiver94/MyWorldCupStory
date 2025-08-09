@@ -1,4 +1,6 @@
-/* Fuente */
+/* =========================
+   Fuentes
+========================= */
 @import url("https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Orbitron:wght@400..900&display=swap");
 
 body {
@@ -7,7 +9,46 @@ body {
   margin: 0;
 }
 
-/* Header */
+main {
+  padding: 40px 0;
+}
+
+.second {
+  background-color: #4a8b77;
+}
+h1,
+h2,
+h3 {
+  font-family: "Orbitron", sans-serif;
+  color: #c2a504;
+  text-decoration: underline;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin: 0;
+}
+
+h2 {
+  font-size: 36px;
+}
+h3 {
+  font-size: 28px;
+}
+
+p {
+  font-family: "Kanit", sans-serif;
+  color: #000;
+  font-size: 20px;
+}
+
+p:hover {
+  color: #8f0303;
+}
+
+/* Header + Navbar */
 header {
   display: flex;
   align-items: center;
@@ -26,7 +67,6 @@ header h1 {
   margin-bottom: 20px;
 }
 
-/* Menu */
 .navbar ul {
   display: flex;
   gap: 15px;
@@ -50,12 +90,7 @@ header h1 {
   text-decoration: underline;
 }
 
-/* Main */
-main {
-  padding: 40px 0;
-}
-
-/* Columnas alineadas verticalmmente */
+/* Imágenes dentro de columnas */
 main .row {
   align-items: center;
 }
@@ -67,47 +102,12 @@ main .row .col img {
   border-radius: 8px;
   margin: 8px auto;
 }
+
 main p {
   text-align: left;
 }
-.second {
-  background-color: #4a8b77;
-}
-/* Titulos */
-h1,
-h2,
-h3 {
-  font-family: "Orbitron", sans-serif;
-  color: #c2a504;
-  text-decoration: underline;
-}
 
-h1 {
-  text-align: center;
-  font-size: 3rem;
-  margin: 0;
-}
-
-h2 {
-  font-size: 36px;
-}
-
-h3 {
-  font-size: 28px;
-}
-
-/*  Parrafos */
-p {
-  font-family: "Kanit", sans-serif;
-  color: #000;
-  font-size: 20px;
-}
-
-p:hover {
-  color: #8f0303;
-}
-
-/* Boton Tickets FIFA */
+/* Botón (Tickets) */
 .btn-tickets {
   display: inline-block;
   font-family: "Orbitron", sans-serif;
@@ -119,14 +119,13 @@ p:hover {
   border-radius: 5px;
   background-color: rgb(202, 121, 0);
 }
-
 .btn-tickets:hover {
   background-color: rgb(24, 168, 56);
 }
 
-/* FOOTER */
+/* Footer */
 .site-footer {
-  background-color: #16503e; /* verde oscuro */
+  background-color: #16503e;
   padding: 12px 20px;
 }
 
@@ -146,7 +145,6 @@ p:hover {
   color: #000;
 }
 
-/* Redes */
 .site-footer__social-list {
   list-style: none;
   display: flex;
@@ -154,7 +152,6 @@ p:hover {
   margin: 0;
   padding: 0;
 }
-
 .site-footer__social-item a {
   font-family: "Kanit", sans-serif;
   font-size: 16px;
@@ -166,62 +163,11 @@ p:hover {
   text-decoration: underline;
 }
 
-.stadiums .carousel-caption {
-  position: static;
-  transform: none;
-  width: 100%;
-  padding: 1rem;
-  background: #004c94;
-  color: #fdfbfb;
-  border-radius: 0 0 0.5rem 0.5rem;
-  text-align: left;
-}
+/* Carouseles por sección (página Rusia2018) */
 
-.stadiums .carousel-item img {
-  width: 100%;
-  height: 420px;
-  object-fit: cover;
-  display: block;
-}
-
-.cities .carousel-caption {
-  position: static;
-  transform: none;
-  width: 100%;
-  padding: 1rem;
-  background: #004c94;
-  color: #fdfbfb;
-  border-radius: 0 0 0.5rem 0.5rem;
-  text-align: left;
-}
-
-.cities .carousel-item img {
-  width: 100%;
-  height: 420px;
-  object-fit: cover;
-  display: block;
-}
-
-.matchs .carousel-caption {
-  position: static;
-  transform: none;
-  width: 100%;
-  padding: 1rem;
-  background: #004c94;
-  color: #fdfbfb;
-  border-radius: 0 0 0.5rem 0.5rem;
-  text-align: left;
-}
-
-.matchs .carousel-item img {
-  width: 100%;
-  height: 420px;
-  object-fit: cover;
-  display: block;
-}
-.matchs .carousel {
-  width: 100%;
-}
+.stadiums .carousel-caption,
+.cities .carousel-caption,
+.matchs .carousel-caption,
 .summary .carousel-caption {
   position: static;
   transform: none;
@@ -233,12 +179,136 @@ p:hover {
   text-align: left;
 }
 
+.stadiums .carousel-item img,
+.cities .carousel-item img,
+.matchs .carousel-item img,
 .summary .carousel-item img {
   width: 100%;
   height: 420px;
   object-fit: cover;
   display: block;
 }
+
+.matchs .carousel {
+  width: 100%;
+}
+
+/* Travel Tips */
+
+/* Ícono */
+main.container-fluid section:first-of-type img.img-fluid {
+  max-width: 220px; /* achica el logo de tips */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Carruseles */
+main.container-fluid .carousel .carousel-item img {
+  width: 100%;
+  height: 360px; /* más bajo que los de Rusia (420px) */
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
+}
+
+/* Cards */
+main.container-fluid .card {
+  background: #aaf0d9;
+  border: none;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main.container-fluid .card .card-body {
+  padding: 0.85rem 1rem;
+}
+
+main.container-fluid .card .card-title {
+  margin: 0 0 0.75rem;
+  padding: 0.5rem 0.75rem;
+  background: #004c94;
+  color: #fdfbfb;
+  border-radius: 10px;
+  font-family: "Orbitron", sans-serif;
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+main.container-fluid .list-group {
+  border: 0;
+}
+
+main.container-fluid .list-group .list-group-item {
+  background: transparent;
+  border: 0;
+  border-left: 4px solid rgba(22, 80, 62, 0.35);
+  margin: 0.35rem 0;
+  padding: 0.5rem 0.75rem;
+  color: #000;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+main.container-fluid .list-group .list-group-item:hover {
+  background: rgba(22, 80, 62, 0.08);
+}
+
+/* Hover sutil en cards */
+@media (hover: hover) {
+  main.container-fluid .card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.12);
+  }
+}
+
+/* Accordion */
+main.container-fluid .accordion-item {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  background: #ffffff;
+  margin-bottom: 0.75rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main.container-fluid .accordion-button {
+  background: #16503e;
+  color: #e9f9f3;
+  font-family: "Kanit", sans-serif;
+  padding: 0.9rem 1rem;
+  box-shadow: none !important;
+}
+
+main.container-fluid .accordion-button:not(.collapsed) {
+  background: #004c94;
+  color: #fdfbfb;
+}
+
+/* Ícono del accordion en claro */
+main.container-fluid .accordion-button::after {
+  filter: brightness(0) invert(1);
+  opacity: 0.9;
+}
+
+main.container-fluid .accordion-body {
+  background: #eaf6f2;
+  color: #000;
+  padding: 0.85rem 1rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+main.container-fluid > section {
+  padding-block: 2rem;
+}
+
 /* Responsive */
 
 /* Tablet */
@@ -263,14 +333,12 @@ p:hover {
     order: 3;
   }
 
-  /* Botón hamburguesa */
   header .navbar-toggler {
     position: static;
     margin-left: auto;
     transform: none;
   }
 
-  /* Área colapsable: ancho completo, separada del botón */
   header .navbar-collapse {
     position: static;
     width: 100%;
@@ -279,7 +347,6 @@ p:hover {
     border-top: 1px solid rgba(255, 255, 255, 0.12);
   }
 
-  /* Links del menú en columna y centrados */
   header .navbar-nav {
     flex-direction: column;
     justify-content: center;
@@ -307,6 +374,11 @@ p:hover {
   p {
     font-size: 18px;
     text-align: left;
+  }
+
+  /* Travel Tips */
+  main.container-fluid .carousel .carousel-item img {
+    height: 320px;
   }
 }
 
@@ -344,120 +416,14 @@ p:hover {
     gap: 10px;
     text-align: center;
   }
-}
-main.container-fluid .card {
-  background: #eaf6f2; /* verde muy claro, coherente con el sitio */
-  border: none;
-  border-radius: 14px;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
-  overflow: hidden;
-}
 
-main.container-fluid .card .card-body {
-  padding: 1.25rem 1.25rem 1rem;
-}
-
-main.container-fluid .card .card-title {
-  margin: 0 0 0.75rem;
-  padding: 0.5rem 0.75rem;
-  background: #004c94; /* azul de tus captions */
-  color: #fdfbfb;
-  border-radius: 10px;
-  font-family: "Orbitron", sans-serif;
-  text-decoration: none; /* por si algún reset la subraya */
-}
-
-/* List-group adentro de las cards */
-main.container-fluid .list-group {
-  border: 0;
-}
-
-main.container-fluid .list-group .list-group-item {
-  background: transparent;
-  border: 0;
-  border-left: 4px solid rgba(22, 80, 62, 0.35); /* acento #16503e */
-  margin: 0.35rem 0;
-  padding: 0.5rem 0.75rem;
-  color: #000;
-}
-
-main.container-fluid .list-group .list-group-item:hover {
-  background: rgba(22, 80, 62, 0.08);
-}
-
-/* Hover sutil de card */
-@media (hover: hover) {
-  main.container-fluid .card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.12);
+  /* Travel Tips: carruseles más compactos en mobile */
+  main.container-fluid .carousel .carousel-item img {
+    height: 260px;
   }
-}
 
-/* Accordion – encabezado con tu paleta */
-main.container-fluid .accordion-item {
-  border: none;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
-  background: #ffffff;
-  margin-bottom: 0.75rem;
-}
-
-main.container-fluid .accordion-button {
-  background: #16503e; /* verde oscuro header */
-  color: #e9f9f3;
-  font-family: "Kanit", sans-serif;
-  padding: 0.9rem 1rem;
-  box-shadow: none !important;
-}
-
-main.container-fluid .accordion-button:not(.collapsed) {
-  background: #004c94; /* al abrir: azul captions */
-  color: #fdfbfb;
-}
-
-/* Cambiar color del ícono del accordion (chevron) */
-main.container-fluid .accordion-button::after {
-  filter: brightness(0) invert(1); /* lo vuelve blanco */
-  opacity: 0.9;
-}
-
-/* Cuerpo del accordion */
-main.container-fluid .accordion-body {
-  background: #eaf6f2; /* mismo tono que cards */
-  color: #000;
-  padding: 1rem 1.1rem 1.1rem;
-}
-
-/* Borde/halo de foco acorde a tu azul */
-main.container-fluid .accordion-button:focus {
-  box-shadow: 0 0 0 0.2rem rgba(0, 76, 148, 0.28);
-}
-
-/* Espaciado uniforme entre bloques de la página */
-main.container-fluid > section {
-  padding-block: 2rem;
-}
-main.container-fluid .card,
-main.container-fluid .accordion-item {
-  max-width: 800px; /* ancho máximo */
-  margin-left: auto; /* centrar */
-  margin-right: auto;
-}
-
-/* Reducir tipografía en esas secciones para que no se vean tan grandes */
-main.container-fluid .card .card-title {
-  font-size: 1.3rem;
-}
-
-main.container-fluid .list-group .list-group-item,
-main.container-fluid .accordion-body {
-  font-size: 0.95rem;
-  line-height: 1.5;
-}
-
-/* Ajustar spacing general para que no queden tan "espaciados" */
-main.container-fluid .card .card-body,
-main.container-fluid .accordion-body {
-  padding: 0.85rem 1rem;
+  /* Ícono Travel Tips un poco más chico en mobile */
+  main.container-fluid section:first-of-type img.img-fluid {
+    max-width: 180px;
+  }
 }
