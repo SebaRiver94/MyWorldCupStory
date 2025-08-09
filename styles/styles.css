@@ -143,18 +143,11 @@ p:hover {
 
 .stadiums .carousel-item img {
   width: 100%;
-  height: 420px; /* Alto fijo */
-  object-fit: cover; /* Recorte proporcional */
+  height: 420px;
+  object-fit: cover;
   display: block;
 }
 
-.stadiums p {
-  color: #8f0303;
-}
-
-.cities p {
-  color: #8f0303;
-}
 .cities .carousel-caption {
   position: static;
   transform: none;
@@ -168,13 +161,9 @@ p:hover {
 
 .cities .carousel-item img {
   width: 100%;
-  height: 420px; /* Alto fijo */
-  object-fit: cover; /* Recorte proporcional */
+  height: 420px;
+  object-fit: cover;
   display: block;
-}
-
-.cities p {
-  color: #8f0303;
 }
 
 .matchs .carousel-caption {
@@ -189,7 +178,6 @@ p:hover {
 }
 
 .matchs .carousel-item img {
-  /* hace que la imagen llene el slide */
   width: 100%;
   height: 420px;
   object-fit: cover;
@@ -198,6 +186,24 @@ p:hover {
 .matchs .carousel {
   width: 100%;
 }
+.summary .carousel-caption {
+  position: static;
+  transform: none;
+  width: 100%;
+  padding: 1rem;
+  background: #004c94;
+  color: #fdfbfb;
+  border-radius: 0 0 0.5rem 0.5rem;
+  text-align: left;
+}
+
+.summary .carousel-item img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  display: block;
+}
+
 /* Responsive */
 
 /* Tablet */
