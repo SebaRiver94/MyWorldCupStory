@@ -130,7 +130,34 @@ p:hover {
   color: #000;
   text-align: center;
 }
+.stadiums .carousel-caption {
+  position: static;
+  transform: none;
+  width: 100%;
+  padding: 1rem;
+  background: #004c94;
+  color: #fdfbfb;
+  border-radius: 0 0 0.5rem 0.5rem;
+  text-align: left;
+}
 
+.stadiums .carousel-item img {
+  width: 100%;
+  height: 420px; /* Alto fijo */
+  object-fit: cover; /* Recorte proporcional */
+  display: block;
+}
+
+.stadiums p {
+  color: #bd0202;
+}
+
+.p-info {
+  color: #000;
+}
+.p-info:hover {
+  color: #ac0101;
+}
 /* Responsive */
 
 /* Tablet */
