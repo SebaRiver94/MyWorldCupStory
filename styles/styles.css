@@ -103,7 +103,7 @@ p {
 }
 
 p:hover {
-  color: #ac0101;
+  color: #8f0303;
 }
 
 /* Boton Tickets FIFA */
@@ -148,16 +148,31 @@ p:hover {
   display: block;
 }
 
-.stadiums p {
-  color: #bd0202;
+.cities p {
+  color: #8f0303;
+}
+.cities .carousel-caption {
+  position: static;
+  transform: none;
+  width: 100%;
+  padding: 1rem;
+  background: #004c94;
+  color: #fdfbfb;
+  border-radius: 0 0 0.5rem 0.5rem;
+  text-align: left;
 }
 
-.p-info {
-  color: #000;
+.cities .carousel-item img {
+  width: 100%;
+  height: 420px; /* Alto fijo */
+  object-fit: cover; /* Recorte proporcional */
+  display: block;
 }
-.p-info:hover {
-  color: #ac0101;
+
+.cities p {
+  color: #8f0303;
 }
+
 /* Responsive */
 
 /* Tablet */
