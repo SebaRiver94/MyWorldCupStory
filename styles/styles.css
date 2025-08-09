@@ -308,6 +308,79 @@ main.container-fluid .accordion-body {
 main.container-fluid > section {
   padding-block: 2rem;
 }
+/* ===== Contact page (form + carousel) ===== */
+.contact h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Form look & feel (coherente con el sitio) */
+.contact .form-label {
+  font-family: "Orbitron", sans-serif;
+  color: #c2a504;
+}
+
+.contact .form-control {
+  border-radius: 10px;
+  border: 1px solid rgba(22, 80, 62, 0.35); /* #16503e con opacidad */
+  background: #eaf6f2; /* verde muy claro que ya usás */
+  color: #000;
+}
+
+.contact .form-control:focus {
+  border-color: #004c94;
+  box-shadow: 0 0 0 0.2rem rgba(0, 76, 148, 0.28);
+  background: #ffffff;
+}
+
+/* Botones primarios con tu paleta */
+.contact .btn-primary,
+.contact .btn-primary:focus {
+  background-color: #16503e;
+  border-color: #16503e;
+  font-family: "Orbitron", sans-serif;
+}
+.contact .btn-primary:hover {
+  background-color: #0f3b2e;
+  border-color: #0f3b2e;
+}
+
+/* Carousel: mismo estilo que cities/stadiums/matchs/summary */
+.contact .carousel-item img {
+  width: 100%;
+  height: 420px; /* misma altura que el resto */
+  object-fit: cover;
+  display: block;
+}
+
+.contact .carousel-caption {
+  position: static; /* para que no tape la imagen */
+  transform: none;
+  width: 100%;
+  padding: 1rem;
+  background: #004c94;
+  color: #fdfbfb;
+  border-radius: 0 0 0.5rem 0.5rem;
+  text-align: left;
+}
+
+/* Indicadores un poco más visibles */
+.contact .carousel-indicators [data-bs-target] {
+  background-color: #16503e;
+}
+.contact .carousel-indicators .active {
+  background-color: #c2a504;
+}
+
+/* CTA debajo del carrusel */
+.contact .btn-lg {
+  border-radius: 10px;
+}
+
+/* Espaciado general de secciones en esta página */
+.contact > section {
+  padding-block: 2rem;
+}
 
 /* Responsive */
 
@@ -426,4 +499,88 @@ main.container-fluid > section {
   main.container-fluid section:first-of-type img.img-fluid {
     max-width: 180px;
   }
+}
+.contact .carousel-item img {
+  height: 320px;
+}
+/* ===== Contact page (form + carousel) ===== */
+.contact h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Form look & feel */
+.contact .form-label {
+  font-family: "Orbitron", sans-serif;
+  color: #c2a504;
+}
+
+.contact .form-control {
+  border-radius: 10px;
+  border: 1px solid rgba(22, 80, 62, 0.35);
+  background: #eaf6f2;
+  color: #000;
+}
+
+.contact .form-control:focus {
+  border-color: #004c94;
+  box-shadow: 0 0 0 0.2rem rgba(0, 76, 148, 0.28);
+  background: #ffffff;
+}
+
+/* Botón de envío de formulario centrado */
+.contact form .btn {
+  display: block;
+  margin: 1rem auto 0;
+  min-width: 220px;
+}
+
+/* Botón FIFA centrado y con margen */
+.contact .btn-lg {
+  display: block;
+  margin: 1.25rem auto 0;
+  min-width: 240px;
+  border-radius: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Carousel imágenes */
+.contact .carousel-item img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Carousel caption */
+.contact .carousel-caption {
+  position: static;
+  transform: none;
+  width: 100%;
+  padding: 1rem;
+  background: #004c94;
+  color: #fdfbfb;
+  border-radius: 0 0 0.5rem 0.5rem;
+  text-align: left;
+}
+
+/* Indicadores reposicionados */
+.contact .carousel-indicators {
+  position: static;
+  margin: 0.75rem 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 0.4rem;
+}
+
+.contact .carousel-indicators {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #16503e;
+}
+
+.contact .carousel-indicators .active {
+  background-color: #c2a504;
 }
