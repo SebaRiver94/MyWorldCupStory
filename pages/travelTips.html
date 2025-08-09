@@ -4,33 +4,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <!--  CSS -->
     <link rel="stylesheet" href="../styles/styles.css">
-    <title>The Ultra Fan Page</title>
+    <title>My World Cup Story</title>
 </head>
 
 <body>
     <header>
         <img class="img-icon" src="../assets/icons/icon-page.png" alt="icon-page">
         <!-- Main title of the page -->
-        <h1>The Fan Page World Cup</h1>
+        <h1>My World Cup Story</h1>
         <!--Navigation menú-->
-        <nav class="navbar">
-            <ul>
-                <li><a class="nav-link" href="../index.html">Home Page</a></li>
-                <li><a class="nav-link" href="tournaments.html">Tournaments</a></li>
-                <li><a class="nav-link" href="photoGallery.html">Gallery</a></li>
-                <li><a class="nav-link" href="#">Travel Tips</a></li>
-                <li><a class="nav-link" href="contact.html">Contact</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-md">
+            <div class="container">
+                <a class="navbar-brand d-none" href="#"></a>
+                <button class="navbar-toggler d-flex d-md-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- MENÚ -->
+                <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                    <ul class="navbar-nav nav-pills fs-5 flex-wrap gap-2" style="width: 100%">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="rusia2018.html">Rusia 2018</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="qatar2022.html">Qatar 2022</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">World Cup Tips</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact W.C. 2026</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
 
     </main>
-    <footer>
-        <p>&copy; 2024 The Ultra Fan Page. All rights reserved.</p> <!-- Footer with copyright information -->
+    <footer class="site-footer">
+        <div class="site-footer__inner">
+            <p class="site-footer__copyright">
+                &copy; 2025 My World Cup Story Page. All rights reserved.
+            </p>
+
+            <nav class="site-footer__social" aria-label="Social links">
+                <ul class="site-footer__social-list">
+                    <li class="site-footer__social-item">
+                        <a href="https://www.facebook.com/sebacarp14?locale=es_LA" target="_blank"
+                            rel="noopener">Facebook</a>
+                    </li>
+                    <li class="site-footer__social-item">
+                        <a href="https://www.instagram.com/sebariver.14/" target="_blank" rel="noopener">Instagram</a>
+                    </li>
+                    <li class="site-footer__social-item">
+                        <a href="https://x.com/9diciembre_18" target="_blank" rel="noopener">Twitter</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
