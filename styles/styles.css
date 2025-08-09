@@ -345,3 +345,119 @@ p:hover {
     text-align: center;
   }
 }
+main.container-fluid .card {
+  background: #eaf6f2; /* verde muy claro, coherente con el sitio */
+  border: none;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+main.container-fluid .card .card-body {
+  padding: 1.25rem 1.25rem 1rem;
+}
+
+main.container-fluid .card .card-title {
+  margin: 0 0 0.75rem;
+  padding: 0.5rem 0.75rem;
+  background: #004c94; /* azul de tus captions */
+  color: #fdfbfb;
+  border-radius: 10px;
+  font-family: "Orbitron", sans-serif;
+  text-decoration: none; /* por si algún reset la subraya */
+}
+
+/* List-group adentro de las cards */
+main.container-fluid .list-group {
+  border: 0;
+}
+
+main.container-fluid .list-group .list-group-item {
+  background: transparent;
+  border: 0;
+  border-left: 4px solid rgba(22, 80, 62, 0.35); /* acento #16503e */
+  margin: 0.35rem 0;
+  padding: 0.5rem 0.75rem;
+  color: #000;
+}
+
+main.container-fluid .list-group .list-group-item:hover {
+  background: rgba(22, 80, 62, 0.08);
+}
+
+/* Hover sutil de card */
+@media (hover: hover) {
+  main.container-fluid .card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.12);
+  }
+}
+
+/* Accordion – encabezado con tu paleta */
+main.container-fluid .accordion-item {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  background: #ffffff;
+  margin-bottom: 0.75rem;
+}
+
+main.container-fluid .accordion-button {
+  background: #16503e; /* verde oscuro header */
+  color: #e9f9f3;
+  font-family: "Kanit", sans-serif;
+  padding: 0.9rem 1rem;
+  box-shadow: none !important;
+}
+
+main.container-fluid .accordion-button:not(.collapsed) {
+  background: #004c94; /* al abrir: azul captions */
+  color: #fdfbfb;
+}
+
+/* Cambiar color del ícono del accordion (chevron) */
+main.container-fluid .accordion-button::after {
+  filter: brightness(0) invert(1); /* lo vuelve blanco */
+  opacity: 0.9;
+}
+
+/* Cuerpo del accordion */
+main.container-fluid .accordion-body {
+  background: #eaf6f2; /* mismo tono que cards */
+  color: #000;
+  padding: 1rem 1.1rem 1.1rem;
+}
+
+/* Borde/halo de foco acorde a tu azul */
+main.container-fluid .accordion-button:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 76, 148, 0.28);
+}
+
+/* Espaciado uniforme entre bloques de la página */
+main.container-fluid > section {
+  padding-block: 2rem;
+}
+main.container-fluid .card,
+main.container-fluid .accordion-item {
+  max-width: 800px; /* ancho máximo */
+  margin-left: auto; /* centrar */
+  margin-right: auto;
+}
+
+/* Reducir tipografía en esas secciones para que no se vean tan grandes */
+main.container-fluid .card .card-title {
+  font-size: 1.3rem;
+}
+
+main.container-fluid .list-group .list-group-item,
+main.container-fluid .accordion-body {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Ajustar spacing general para que no queden tan "espaciados" */
+main.container-fluid .card .card-body,
+main.container-fluid .accordion-body {
+  padding: 0.85rem 1rem;
+}
