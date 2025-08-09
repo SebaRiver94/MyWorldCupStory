@@ -148,6 +148,10 @@ p:hover {
   display: block;
 }
 
+.stadiums p {
+  color: #8f0303;
+}
+
 .cities p {
   color: #8f0303;
 }
