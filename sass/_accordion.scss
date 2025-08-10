@@ -1,0 +1,41 @@
+@use "variables" as vars;
+@use "mixins" as mx;
+
+main.container-fluid .accordion-item {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  background: #ffffff;
+  margin-bottom: 0.75rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main.container-fluid .accordion-button {
+  background: vars.$color-accordion-btn-bg;
+  color: #e9f9f3;
+  font-family: vars.$font-alt;
+  padding: 0.9rem 1rem;
+}
+
+main.container-fluid .accordion-button:not(.collapsed) {
+  background: vars.$color-accordion-btn-active-bg;
+  color: vars.$color-caption-text;
+}
+
+main.container-fluid .accordion-button::after {
+  filter: brightness(0) invert(1);
+  opacity: 0.9;
+}
+
+main.container-fluid .accordion-body {
+  background: vars.$color-accordion-body-bg;
+  color: vars.$color-text;
+  padding: 0.85rem 1rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+main.container-fluid > section { padding-block: 2rem; }

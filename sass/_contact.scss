@@ -1,0 +1,75 @@
+@use "variables" as vars;
+@use "mixins" as mx;
+
+.contact h2 { text-align: center; margin-bottom: 1rem; }
+
+.contact .form-label {
+  font-family: vars.$font-title;
+  color: vars.$color-heading;
+}
+
+.contact .form-control {
+  border-radius: 10px;
+  border: 1px solid rgba(22, 80, 62, 0.35);
+  background: vars.$color-accordion-body-bg;
+  color: vars.$color-text;
+}
+
+.contact .form-control:focus {
+  border-color: vars.$color-accordion-btn-active-bg;
+  @include mx.focus-ring(vars.$color-accordion-btn-active-bg, 0.28);
+  background: #ffffff;
+}
+
+.contact .btn-primary, .contact .btn-primary:focus {
+  background-color: vars.$color-accordion-btn-bg;
+  border-color: vars.$color-accordion-btn-bg;
+  font-family: vars.$font-title;
+}
+
+.contact .btn-primary:hover {
+  background-color: #0f3b2e;
+  border-color: #0f3b2e;
+}
+
+.contact form .btn { display: block; margin: 1rem auto 0; min-width: 220px; }
+
+.contact .btn-lg {
+  display: block;
+  margin: 1.25rem auto 0;
+  min-width: 240px;
+  border-radius: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.contact .carousel-item img { width: 100%; height: 420px; object-fit: cover; }
+
+.contact .carousel-caption {
+  position: static;
+  transform: none;
+  width: 100%;
+  padding: 1rem;
+  background: vars.$color-carousel-caption-bg;
+  color: vars.$color-caption-text;
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.contact .carousel-indicators {
+  position: static;
+  margin: 0.75rem 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 0.4rem;
+}
+
+.contact .carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: vars.$color-accordion-btn-bg;
+}
+
+.contact .carousel-indicators .active { background-color: vars.$color-heading; }
+
+.contact .carousel-indicators { display: none !important; }

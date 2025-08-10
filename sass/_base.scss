@@ -1,0 +1,46 @@
+@use "variables" as vars;
+
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Orbitron:wght@400..900&display=swap");
+
+body {
+  font-family: vars.$font-body;
+  background-color: vars.$color-bg;
+  margin: 0;
+}
+
+main {
+  padding: 40px 0;
+}
+
+.second { background-color: vars.$color-section-alt; }
+
+h1, h2, h3 {
+  font-family: vars.$font-title;
+  color: vars.$color-heading;
+  text-decoration: underline;
+  text-align: center;
+}
+
+h1 { font-size: 3rem; margin: 0; }
+h2 { font-size: 36px; }
+h3 { font-size: 28px; }
+
+p {
+  font-family: vars.$font-alt;
+  color: vars.$color-text;
+  font-size: 20px;
+}
+
+p:hover { color: vars.$color-text-hover; }
+
+main .row { align-items: center; }
+
+main .row .col img {
+  width: 100%;
+  max-width: 520px;
+  height: auto;
+  border-radius: 8px;
+  margin: 8px auto;
+}
+
+main p { text-align: left; }

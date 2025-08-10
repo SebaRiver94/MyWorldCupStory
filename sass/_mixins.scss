@@ -1,0 +1,15 @@
+@use "sass:color";
+@use "variables" as vars;
+
+@mixin focus-ring($c, $alpha: 0.28) {
+  box-shadow: 0 0 0 0.2rem color.change($c, $alpha: $alpha);
+}
+
+@mixin btn-theme($bg, $hover-delta: -8%) {
+  background-color: $bg;
+  border-color: $bg;
+  &:hover {
+    background-color: color.adjust($bg, $lightness: $hover-delta);
+    border-color: color.adjust($bg, $lightness: $hover-delta);
+  }
+}

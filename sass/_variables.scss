@@ -1,0 +1,30 @@
+@use "sass:color";
+
+$font-body: "Alegreya", serif;
+$font-alt: "Kanit", sans-serif;
+$font-title: "Orbitron", sans-serif;
+
+$color-bg: #76ddbc;
+$color-section-alt: #4a8b77;
+$color-header-bg: #16503e;
+$color-heading: #c2a504;
+$color-text: #000;
+$color-text-hover: #8f0303;
+$color-nav-link: #29b3b3;
+
+$color-ticket-text: #1e00ca;
+$color-ticket-bg: rgb(202, 121, 0);
+$color-ticket-bg-hover: rgb(24, 168, 56);
+
+$color-footer-bg: #16503e;
+
+$color-carousel-caption-bg: #004c94;
+$color-caption-text: #fdfbfb;
+
+$color-card-bg: #aaf0d9;
+$color-accordion-btn-bg: #16503e;
+$color-accordion-btn-active-bg: #004c94;
+$color-accordion-body-bg: #eaf6f2;
+
+$bp-tablet: 768px;
+$bp-mobile: 576px;
