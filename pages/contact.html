@@ -26,7 +26,6 @@
         <h1>My World Cup Story</h1>
 
         <!--Navbar -->
-
         <nav class="navbar navbar-expand-md">
             <div class="container">
                 <input type="checkbox" id="nav-toggle" class="nav-toggle" />
@@ -51,94 +50,95 @@
         </nav>
     </header>
 
-    <main class="container-fluid contact">
+    <main>
 
-        <!-- Contact Form -->
-        <section class="container my-4">
-            <div class="row">
-                <div class="col-lg-8 col-xl-7">
-                    <h2>Contact for World Cup 2026</h2>
-                    <form action="https://formspree.io/f/TU_ID_DE_FORM" method="POST" novalidate>
-                        <div class="mb-3">
-                            <label for="name" class="form-label">Full Name</label>
-                            <input id="name" name="name" type="text" class="form-control" placeholder="Enter your name"
-                                required>
-                        </div>
+        <div class="container-fluid contact">
 
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Email Address</label>
-                            <input id="email" name="_replyto" type="email" class="form-control"
-                                placeholder="Enter your email" required>
-                        </div>
+            <!-- Contact Form -->
+            <section class="container my-4">
+                <div class="row">
+                    <div class="col-lg-8 col-xl-7">
+                        <h2>Contact for World Cup 2026</h2>
+                        <form>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Full Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter your name"
+                                    required>
+                            </div>
 
-                        <div class="mb-3">
-                            <label for="message" class="form-label">Message</label>
-                            <textarea id="message" name="message" class="form-control" rows="4"
-                                placeholder="Write your message here..." required></textarea>
-                        </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter your email"
+                                    required>
+                            </div>
 
-                        <button type="submit" class="btn btn-primary">Send</button>
-                    </form>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="4"
+                                    placeholder="Write your message here..." required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Send</button>
+                        </form>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- 2026 Carousel + CTA -->
-        <section class="container py-5">
-            <div class="row">
-                <div class="col-lg-10">
-                    <div id="wc2026Carousel" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#wc2026Carousel" data-bs-slide-to="0" class="active"
-                                aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#wc2026Carousel" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#wc2026Carousel" data-bs-slide-to="2"
-                                aria-label="Slide 3"></button>
-                        </div>
+            <!-- Carousel -->
+            <section class="container py-5">
+                <div class="row">
+                    <div class="col-lg-10">
+                        <div id="wc2026Carousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#wc2026Carousel" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#wc2026Carousel" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                            </div>
 
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="../assets/img/contact/paises.jpg" class="d-block w-100"
-                                    alt="2026 host countries">
-                                <div class="carousel-caption">
-                                    <h5>Host Countries</h5>
-                                    <p>Canada • Mexico • United States</p>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../assets/img/contact/paises.jpg" class="d-block w-100"
+                                        alt="Mapa de países anfitriones del Mundial 2026: Canadá, México y Estados Unidos">
+                                    <div class="carousel-caption">
+                                        <h5>Host Countries</h5>
+                                        <p>Canada • Mexico • United States</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../assets/img/contact/sedes.jpg" class="d-block w-100"
+                                        alt="Vista de estadios que serán sedes del Mundial 2026">
+                                    <div class="carousel-caption">
+                                        <h5>Stadiums</h5>
+                                        <p>New venues and epic atmospheres</p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="carousel-item">
-                                <img src="../assets/img/contact/sedes.jpg" class="d-block w-100" alt="2026 stadiums">
-                                <div class="carousel-caption">
-                                    <h5>Stadiums</h5>
-                                    <p>New venues and epic atmospheres</p>
-                                </div>
-                            </div>
+
                             <button class="carousel-control-prev" type="button" data-bs-target="#wc2026Carousel"
                                 data-bs-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Previous</span>
                             </button>
-                        </div>
-                        <div>
                             <button class="carousel-control-next" type="button" data-bs-target="#wc2026Carousel"
                                 data-bs-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Next</span>
                             </button>
-                        </div>
 
-                        <div class="mt-4">
-                            <a class="btn btn-primary btn-lg"
-                                href="https://www.fifa.com/fifaplus/en/tournaments/mens/worldcup/canadamexicousa2026"
-                                target="_blank" rel="noopener">
-                                FIFA World Cup 2026
-                            </a>
+                            <div class="mt-4">
+                                <a class="btn btn-primary btn-lg"
+                                    href="https://www.fifa.com/fifaplus/en/tournaments/mens/worldcup/canadamexicousa2026"
+                                    target="_blank" rel="noopener">
+                                    FIFA World Cup 2026
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
-        </section>
-
+            </section>
+        </div>
     </main>
+
     <footer>
         <div class="site-footer__inner">
             <p class="site-footer__copyright">
@@ -162,6 +162,7 @@
             </nav>
         </div>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
         crossorigin="anonymous"></script>
