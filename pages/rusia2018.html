@@ -2,57 +2,55 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <!-- Animates -->
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
+    <!-- Animate.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <!--  CSS -->
-    <link rel="stylesheet" href="../styles/styles.css">
-    <title>My World Cup Story - Russia 2018</title>
+    <!-- Google Fonts-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Orbitron:wght@400..900&display=swap"
+        rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <title>My World Cup Story - Rusia 2018</title>
     <meta name="description"
-        content="Travel diary from Russia 2018 with city highlights, stadium galleries and the Argentina matches I attended, including photos and a concise trip summary.">
+        content="Personal fan site sharing World Cup experiences, photos and tips from Russia 2018 and Qatar 2022, plus practical advice to plan your trip to 2026." />
 </head>
 
 <body>
     <header>
-        <img class="img-icon" src="../assets/icons/icon-page.png" alt="icon-page">
-        <!-- Main title of the page -->
+        <img class="img-icon" src="../assets/icons/icon-page.png" alt="Logotipo del sitio My World Cup Story" />
         <h1>My World Cup Story</h1>
-        <!--Navigation menú-->
+
+        <!--Navbar -->
+
         <nav class="navbar navbar-expand-md">
             <div class="container">
-                <a class="navbar-brand d-none" href="#"></a>
-                <button class="navbar-toggler d-flex d-md-none" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <!-- MENÚ -->
-                <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
-                    <ul class="navbar-nav nav-pills fs-5 flex-wrap gap-2" style="width: 100%">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="../index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Rusia 2018</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./qatar2022.html">Qatar 2022</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./travelTips.html">World Cup Tips</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./contact.html">Contact W.C. 2026</a>
-                        </li>
+                <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+                <label class="navbar-toggler d-md-none" for="nav-toggle" aria-label="Abrir menú"
+                    aria-controls="navbarNav">
+                    <span class="toggler-bar"></span>
+                    <span class="toggler-bar"></span>
+                    <span class="toggler-bar"></span>
+                </label>
+
+                <!-- Menú -->
+                <div id="navbarNav" class="nav-menu">
+                    <ul class="navbar-nav nav-pills fs-5 flex-wrap gap-2 w-100">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" aria-current="page" href="#">Rusia 2018</a></li>
+                        <li class="nav-item"><a class="nav-link" href="qatar2022.html">Qatar 2022</a></li>
+                        <li class="nav-item"><a class="nav-link" href="travelTips.html">World Cup Tips</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact W.C. 2026</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
+
     <main>
         <div class="container-fluid">
 
@@ -73,7 +71,7 @@
                             <div class="carousel-inner">
                                 <div class="carousel-item active animate__animated animate__fadeIn">
                                     <img src="../assets/img/rusia-2018/cities/ekaterinburgo.jpg" class="d-block w-100"
-                                        alt="cities-ekaterinburg">
+                                        alt="ekaterinburg_city">
                                     <div class="carousel-caption">
                                         <h4>Ekaterinburg</h4>
                                         <p></p>
@@ -81,7 +79,7 @@
                                 </div>
                                 <div class="carousel-item animate__animated animate__fadeIn">
                                     <img src="../assets/img/rusia-2018/cities/kaliningrad.jpg" class="d-block w-100"
-                                        alt="cities-kaliningrad">
+                                        alt="kaliningrad_city">
                                     <div class="carousel-caption">
                                         <h4>Kaliningrad</h4>
                                         <p></p>
@@ -89,7 +87,7 @@
                                 </div>
                                 <div class="carousel-item animate__animated animate__fadeIn">
                                     <img src="../assets/img/rusia-2018/cities/kazán.jpg" class="d-block w-100"
-                                        alt="cities-kazan">
+                                        alt="kazan_city">
                                     <div class="carousel-caption">
                                         <h4>Kazán</h4>
                                         <p></p>
@@ -97,7 +95,7 @@
                                 </div>
                                 <div class="carousel-item animate__animated animate__fadeIn">
                                     <img src="../assets/img/rusia-2018/cities/moscow.jpg" class="d-block w-100"
-                                        alt="cities-moscow">
+                                        alt="moscow_city">
                                     <div class="carousel-caption">
                                         <h4>Moscow</h4>
                                         <p></p>
@@ -105,7 +103,7 @@
                                 </div>
                                 <div class="carousel-item animate__animated animate__fadeIn">
                                     <img src="../assets/img/rusia-2018/cities/nizhny.jpg" class="d-block w-100"
-                                        alt="cities-nizhny">
+                                        alt="nizhny_city">
                                     <div class="carousel-caption">
                                         <h4>Nizhny Novgorod</h4>
                                         <p></p>
@@ -121,7 +119,7 @@
                                 </div>
                                 <div class="carousel-item animate__animated animate__fadeIn">
                                     <img src="../assets/img/rusia-2018/cities/st-petersburgo.jpg" class="d-block w-100"
-                                        alt="cities-st-petersburg">
+                                        alt="saint_petersburg_city">
                                     <div class="carousel-caption">
                                         <h4>Saint Petersburgo</h4>
                                         <p></p>
@@ -130,7 +128,7 @@
 
                                 <div class="carousel-item animate__animated animate__fadeIn">
                                     <img src="../assets/img/rusia-2018/cities/samara.jpg" class="d-block w-100"
-                                        alt="cities-samara">
+                                        alt="samara_city">
                                     <div class="carousel-caption">
                                         <h4>Samara</h4>
                                         <p></p>
@@ -138,7 +136,7 @@
                                 </div>
                                 <div class="carousel-item animate__animated animate__fadeIn">
                                     <img src="../assets/img/rusia-2018/cities/saranks.jpg" class="d-block w-100"
-                                        alt="cities-saranks">
+                                        alt="saranks_city">
                                     <div class="carousel-caption">
                                         <h4>Saranks</h4>
                                         <p></p>
@@ -147,7 +145,7 @@
 
                                 <div class="carousel-item animate__animated animate__fadeIn">
                                     <img src="../assets/img/rusia-2018/cities/sochi.jpg" class="d-block w-100"
-                                        alt="cities-sochi">
+                                        alt="sochi_city">
                                     <div class="carousel-caption">
                                         <h4>Sochi</h4>
                                         <p></p>
@@ -156,7 +154,7 @@
 
                                 <div class="carousel-item animate__animated animate__fadeIn">
                                     <img src="../assets/img/rusia-2018/cities/volgogrado.jpg" class="d-block w-100"
-                                        alt="cities-volgograd">
+                                        alt="volgograd_city">
                                     <div class="carousel-caption">
                                         <h4>Volgograd</h4>
                                         <p></p>
@@ -187,7 +185,7 @@
                             <div class="carousel-inner">
                                 <div class="carousel-item active animate__animated animate__fadeInUp">
                                     <img src="../assets/img/rusia-2018/stadiums/Ekaterinburg-Arena.jpg"
-                                        class="d-block w-100" alt="ekaterinburg-arena">
+                                        class="d-block w-100" alt="ekaterinburg_arena_stadium">
                                     <div class="carousel-caption">
                                         <h4>Ekaterinburg Arena</h4>
                                         <p>Unique temporary stands extended beyond the structur.</p>
@@ -195,7 +193,7 @@
                                 </div>
                                 <div class="carousel-item animate__animated animate__fadeInUp">
                                     <img src="../assets/img/rusia-2018/stadiums/Kaliningrad-Stadium.jpg"
-                                        class="d-block w-100" alt="kaliningrad-stadium">
+                                        class="d-block w-100" alt="kaliningrad_stadium">
                                     <div class="carousel-caption">
                                         <h4>Kaliningrad Stadium</h4>
                                         <p>Compact and intimate, perfect for close-up action.</p>
@@ -203,7 +201,7 @@
                                 </div>
                                 <div class="carousel-item animate__animated animate__fadeInUp">
                                     <img src="../assets/img/rusia-2018/stadiums/Kazan-Arena.jpg" class="d-block w-100"
-                                        alt="kazan-arena">
+                                        alt="kazan_arena_stadium">
                                     <div class="carousel-caption">
                                         <h4>Kazán Arena</h4>
                                         <p>Modern design with a vibrant atmosphere at night.</p>
@@ -211,7 +209,7 @@
                                 </div>
                                 <div class="carousel-item animate__animated animate__fadeInUp">
                                     <img src="../assets/img/rusia-2018/stadiums/Luzhniki.jpg" class="d-block w-100"
-                                        alt="luzhniki-stadium">
+                                        alt="luzhniki_stadium">
                                     <div class="carousel-caption">
                                         <h4>Luzhniki Stadium</h4>
                                         <p>Historic venue with a legendary feel during big matches.</p>
@@ -219,7 +217,7 @@
                                 </div>
                                 <div class="carousel-item animate__animated animate__fadeInUp">
                                     <img src="../assets/img/rusia-2018/stadiums/Spartak-Stadium.jpg"
-                                        class="d-block w-100" alt="spartak-stadium">
+                                        class="d-block w-100" alt="spartak_stadium">
                                     <div class="carousel-caption">
                                         <h4>Spartak Stadium</h4>
                                         <p>Passionate fans and sleek architecture.</p>
@@ -227,7 +225,7 @@
                                 </div>
                                 <div class="carousel-item animate__animated animate__fadeInUp">
                                     <img src="../assets/img/rusia-2018/stadiums/Nizhny-Novgorod-Stadium.jpg"
-                                        class="d-block w-100" alt="nizhny-novgorod-stadium">
+                                        class="d-block w-100" alt="nizhny_novgorod_stadium">
                                     <div class="carousel-caption">
                                         <h4>Nizhny Novgorod Stadium</h4>
                                         <p>Scenic views by the river and open, fresh air design.</p>
@@ -235,7 +233,7 @@
                                 </div>
                                 <div class="carousel-item animate__animated animate__fadeInUp">
                                     <img src="../assets/img/rusia-2018/stadiums/Rostov-Arena.jpg" class="d-block w-100"
-                                        alt="rostov-arena">
+                                        alt="rostov_arena_stadium">
                                     <div class="carousel-caption">
                                         <h4>Rostov Arena</h4>
                                         <p>Easy to navigate and welcoming atmosphere.</p>
@@ -243,7 +241,7 @@
                                 </div>
                                 <div class="carousel-item animate__animated animate__fadeInUp">
                                     <img src="../assets/img/rusia-2018/stadiums/St-Petersburg.jpg" class="d-block w-100"
-                                        alt="st-petersburg">
+                                        alt="saint_petersburg_stadium">
                                     <div class="carousel-caption">
                                         <h4>Saint Petersburgo</h4>
                                         <p>One of the most impressive arenas with great acoustics.</p>
@@ -252,7 +250,7 @@
 
                                 <div class="carousel-item animate__animated animate__fadeInUp">
                                     <img src="../assets/img/rusia-2018/stadiums/Samara-Arena.jpg" class="d-block w-100"
-                                        alt="samara-arena">
+                                        alt="samara_arena_stadium">
                                     <div class="carousel-caption">
                                         <h4>Samara Arena</h4>
                                         <p>Futuristic look with comfortable seating.</p>
@@ -260,7 +258,7 @@
                                 </div>
                                 <div class="carousel-item animate__animated animate__fadeInUp">
                                     <img src="../assets/img/rusia-2018/stadiums/Mordovia-Arena.jpg"
-                                        class="d-block w-100" alt="mordovia-arena">
+                                        class="d-block w-100" alt="mordovia_-arena_stadium">
                                     <div class="carousel-caption">
                                         <h4>Mordovia Arena</h4>
                                         <p>Colorful and filled with friendly fans.</p>
@@ -269,7 +267,7 @@
 
                                 <div class="carousel-item animate__animated animate__fadeInUp">
                                     <img src="../assets/img/rusia-2018/stadiums/Fisht-Stadium.jpg" class="d-block w-100"
-                                        alt="Fisht-stadium">
+                                        alt="fisht_stadium">
                                     <div class="carousel-caption">
                                         <h4>Fisht Stadium</h4>
                                         <p>Incredible coastal setting with stunning sunsets</p>
@@ -278,7 +276,7 @@
 
                                 <div class="carousel-item animate__animated animate__fadeInUp">
                                     <img src="../assets/img/rusia-2018/stadiums/Volgograd-Arena.jpg"
-                                        class="d-block w-100" alt="volgograd-arena">
+                                        class="d-block w-100" alt="volgograd_arena_stadium">
                                     <div class="carousel-caption">
                                         <h4>Volgograd Arena</h4>
                                         <p>Beautiful lattice design near historic landmarks.</p>
@@ -327,7 +325,7 @@
                             <div class="carousel-inner">
                                 <div class="carousel-item active animate__animated animate__zoomIn">
                                     <img src="../assets/img/rusia-2018/matchs/arg-nig.png" class="d-block w-100"
-                                        alt="arg-nig">
+                                        alt="partido argentina versus nigeria">
                                     <div class="carousel-caption">
                                         <h4>Argentinian vs. Nigerian</h4>
                                         <p></p>
@@ -335,7 +333,7 @@
                                 </div>
                                 <div class="carousel-item animate__animated animate__zoomIn">
                                     <img src="../assets/img/rusia-2018/matchs/arg-nig2.png" class="d-block w-100"
-                                        alt="arg-nig">
+                                        alt=" partido argentina versus nigeria 2">
                                     <div class="carousel-caption">
                                         <h4>Argentinian vs. Nigerian</h4>
                                         <p></p>
@@ -343,7 +341,7 @@
                                 </div>
                                 <div class="carousel-item animate__animated animate__zoomIn">
                                     <img src="../assets/img/rusia-2018/matchs/arg-fr.png" class="d-block w-100"
-                                        alt="arg-fra">
+                                        alt=" paartido argentina versus francia">
                                     <div class="carousel-caption">
                                         <h4>Argentinian vs. France</h4>
                                         <p></p>
@@ -351,7 +349,7 @@
                                 </div>
                                 <div class="carousel-item animate__animated animate__zoomIn">
                                     <img src="../assets/img/rusia-2018/matchs/arg-fr2.png" class="d-block w-100"
-                                        alt="arg-fra">
+                                        alt=" partido argentina versus francia 2">
                                     <div class="carousel-caption">
                                         <h4>Argentinian vs. France</h4>
                                         <p></p>
@@ -382,7 +380,7 @@
                             <div class="carousel-inner">
                                 <div class="carousel-item active animate__animated animate__fadeIn">
                                     <img src="../assets/img/rusia-2018/experience/my-cathedral.png"
-                                        class="d-block w-100" alt="plazaRoja">
+                                        class="d-block w-100" alt="mi experiencia en la catedral">
                                     <div class="carousel-caption">
                                         <h4>My Moment at Saint Basil's Cathedral</h4>
                                         <p>Standing proudly with the Argentine flag in front of Saint Basil's Cathedral
@@ -392,7 +390,7 @@
                                 </div>
                                 <div class="carousel-item animate__animated animate__fadeIn">
                                     <img src="../assets/img/rusia-2018/experience/saint-basil's-cathedral.png"
-                                        class="d-block w-100" alt="plaza-roja">
+                                        class="d-block w-100" alt="catedral_san_basílico">
                                     <div class="carousel-caption">
                                         <h4>Saint Basil's Cathedral</h4>
                                         <p>Saint Basil's Cathedral amazed me with its vibrant colors and unique
@@ -451,7 +449,7 @@
 
     </main>
     <!-- Footer with copyright information -->
-    <footer class="site-footer">
+    <footer>
         <div class="site-footer__inner">
             <p class="site-footer__copyright">
                 &copy; 2025 My World Cup Story Page. All rights reserved.
@@ -461,13 +459,14 @@
                 <ul class="site-footer__social-list">
                     <li class="site-footer__social-item">
                         <a href="https://www.facebook.com/sebacarp14?locale=es_LA" target="_blank"
-                            rel="noopener">Facebook</a>
+                            rel="noopener noreferrer">Facebook</a>
                     </li>
                     <li class="site-footer__social-item">
-                        <a href="https://www.instagram.com/sebariver.14/" target="_blank" rel="noopener">Instagram</a>
+                        <a href="https://www.instagram.com/sebariver.14/" target="_blank"
+                            rel="noopener noreferrer">Instagram</a>
                     </li>
                     <li class="site-footer__social-item">
-                        <a href="https://x.com/9diciembre_18" target="_blank" rel="noopener">Twitter</a>
+                        <a href="https://x.com/9diciembre_18" target="_blank" rel="noopener noreferrer">Twitter</a>
                     </li>
                 </ul>
             </nav>
@@ -476,16 +475,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
         crossorigin="anonymous"></script>
-    <script>
-        document.querySelectorAll('.carousel').forEach(carousel => {
-            carousel.addEventListener('slide.bs.carousel', function (event) {
-                const imgs = carousel.querySelectorAll('.carousel-item');
-                imgs.forEach(img => img.classList.remove('animate__animated', 'animate__fadeIn', 'animate__fadeInUp'));
-                const next = event.relatedTarget;
-                next.classList.add('animate__animated', 'animate__fadeIn');
-            });
-        });
-    </script>
 </body>
 
 </html>
