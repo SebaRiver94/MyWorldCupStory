@@ -2,28 +2,43 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <!--  CSS -->
-    <link rel="stylesheet" href="./styles/styles.css">
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Google Fonts-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Orbitron:wght@400..900&display=swap"
+        rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles/styles.css" />
     <title>My World Cup Story</title>
     <meta name="description"
-        content="Personal fan site sharing World Cup experiences, photos and tips from Russia 2018 and Qatar 2022, plus practical advice to plan your trip to 2026.">
+        content="Personal fan site sharing World Cup experiences, photos and tips from Russia 2018 and Qatar 2022, plus practical advice to plan your trip to 2026." />
 </head>
 
 <body>
     <header>
-        <img class="img-icon" src="./assets/icons/icon-page.png" alt="Logotipo del sitio My World Cup Story">
+        <img class="img-icon" src="./assets/icons/icon-page.png" alt="Logotipo del sitio My World Cup Story" />
         <h1>My World Cup Story</h1>
+
+        <!--Navbar -->
+
         <nav class="navbar navbar-expand-md">
             <div class="container">
-                <a class="navbar-brand d-none" href="#"></a>
+                <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+                <label class="navbar-toggler d-md-none" for="nav-toggle" aria-label="Abrir menú"
+                    aria-controls="navbarNav">
+                    <span class="toggler-bar"></span>
+                    <span class="toggler-bar"></span>
+                    <span class="toggler-bar"></span>
+                </label>
 
-                <!-- MENÚ -->
-                <div class="navbar-collapse show justify-content-between" id="navbarNav">
+                <!-- Menú -->
+                <div id="navbarNav" class="nav-menu">
                     <ul class="navbar-nav nav-pills fs-5 flex-wrap gap-2 w-100">
                         <li class="nav-item"><a class="nav-link" aria-current="page" href="#">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="pages/rusia2018.html">Rusia 2018</a></li>
@@ -35,76 +50,91 @@
             </div>
         </nav>
     </header>
+
     <main>
         <div class="container-fluid">
-
             <!-- Fila 1: Título, párrafo, imagen -->
-            <div class="row row-cols-1 row-cols-md-3 reveal" data-anim="animate__fadeInLeft">
+            <div class="row row-cols-1 row-cols-md-3">
                 <div class="col">
-                    <h2>Living the World Cup Magic</h2>
+                    <h2 class="animate__animated animate__fadeInLeft">Living the World Cup Magic</h2>
                 </div>
                 <div class="col">
-                    <p>Here, I want to share with you what it truly feels like to live the greatest tournament on Earth.
+                    <p class="animate__animated animate__fadeInUp">
+                        Here, I want to share with you what it truly feels like to live the greatest tournament on
+                        Earth.
                     </p>
-                    <p>The World Cup is more than just football, it's a stage where the best from every continent fight
-                        for one dream: lifting the most coveted trophy in the sport.</p>
-                    <p>Its passion, unity, and unforgettable moments that bring the world together through the beautiful
-                        game.</p>
+                    <p class="animate__animated animate__fadeInUp animate__delay-1s">
+                        The World Cup is more than just football, it's a stage where the best from every continent fight
+                        for one dream: lifting the most coveted trophy in the sport.
+                    </p>
+                    <p class="animate__animated animate__fadeInUp animate__delay-2s">
+                        Its passion, unity, and unforgettable moments that bring the world together through the
+                        beautiful
+                        game.
+                    </p>
                 </div>
                 <div class="col">
                     <img src="./assets/img/fans.jpg"
-                        alt="Hinchas celebrando con banderas en una tribuna durante un partido del Mundial">
+                        alt="Hinchas celebrando con banderas en una tribuna durante un partido del Mundial"
+                        class="animate__animated animate__fadeInRight" />
                 </div>
             </div>
 
             <!-- Fila 2: Imagen, párrafo, título -->
-            <div class="second row row-cols-1 row-cols-md-3 reveal" data-anim="animate__fadeInRight">
+            <div class="second row row-cols-1 row-cols-md-3">
                 <div class="col">
                     <img src="./assets/img/congratulations.avif"
-                        alt="Jugadores celebrando el triunfo en la final del Mundial">
+                        alt="Jugadores celebrando el triunfo en la final del Mundial"
+                        class="animate__animated animate__fadeInLeft" />
                 </div>
                 <div class="col">
-                    <p>From the first whistle to the final celebration, the World Cup is a rollercoaster of emotions.
+                    <p class="animate__animated animate__fadeInUp">
+                        From the first whistle to the final celebration, the World Cup is a rollercoaster of emotions.
                         I've been lucky enough to witness the magic up close, the roaring crowds, the nail-biting
                         matches,
-                        and the moments that make football the world's game.</p>
-                    <p>Whether you've been a fan all your life or you're just starting to fall in love with it, I hope
-                        this space helps you feel the same excitement I've felt in every stadium I've visited.</p>
+                        and the moments that make football the world's game.
+                    </p>
+                    <p class="animate__animated animate__fadeInUp animate__delay-1s">
+                        Whether you've been a fan all your life or you're just starting to fall in love with it, I hope
+                        this space helps you feel the same excitement I've felt in every stadium I've visited.
+                    </p>
                 </div>
                 <div class="col">
-                    <h2>The Ultimate Football Experience</h2>
+                    <h2 class="animate__animated animate__fadeInRight">The Ultimate Football Experience</h2>
                 </div>
             </div>
 
             <!-- Fila 3: Título, párrafo, imagen -->
-            <div class="row row-cols-1 row-cols-md-3 reveal" data-anim="animate__fadeInLeft">
+            <div class="row row-cols-1 row-cols-md-3">
                 <div class="col">
-                    <h3>How to Secure Your World Cup Tickets 2026</h3>
+                    <h3 class="animate__animated animate__fadeInLeft">How to Secure Your World Cup Tickets 2026</h3>
                 </div>
                 <div class="col">
-                    <p>Getting into a World Cup stadium is something every fan dreams of. I always go through FIFA's
+                    <p class="animate__animated animate__fadeInUp">
+                        Getting into a World Cup stadium is something every fan dreams of. I always go through FIFA's
                         official ticketing platform, it's the safest way to get your seat. Months before the tournament,
                         I register, pick the matches I don't want to miss, and stay ready for the ticket release dates.
                         When the sales window opens, you need to act fast because demand is sky-high. Planning ahead is
                         the
-                        key to making sure you're in the stands when history is written.</p>
+                        key to making sure you're in the stands when history is written.
+                    </p>
 
-                    <a class="btn-tickets" href="https://www.fifa.com/es/tickets" target="_blank"
-                        rel="noopener noreferrer">
+                    <a class="btn-tickets animate__animated animate__fadeInUp animate__delay-1s"
+                        href="https://www.fifa.com/es/tickets" target="_blank" rel="noopener noreferrer">
                         More information
                     </a>
                 </div>
                 <div class="col">
-                    <img src="./assets/img/tickets.jpg"
-                        alt="Entradas oficiales para partidos de la Copa del Mundo 2026">
+                    <img src="./assets/img/tickets.jpg" alt="Entradas oficiales para partidos de la Copa del Mundo 2026"
+                        class="animate__animated animate__fadeInRight" />
                 </div>
             </div>
         </div>
-
     </main>
+
     <!-- Footer with copyright information -->
     <footer>
-        <div class="site-footer site-footer__inner">
+        <div class="site-footer__inner">
             <p class="site-footer__copyright">
                 &copy; 2025 My World Cup Story Page. All rights reserved.
             </p>

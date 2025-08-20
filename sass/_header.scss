@@ -26,17 +26,15 @@ header h1 {
 /* Lista de navegación */
 .navbar-nav {
   display: flex;
-  gap: 15px; /* espacio entre items */
+  gap: 15px;
   padding: 0;
   margin: 0;
 }
 
-/* Ítems de la nav */
 .navbar-nav .nav-item {
   list-style: none;
 }
 
-/* Links */
 .navbar-nav .nav-link {
   font-family: vars.$font-alt;
   font-size: 25px;
@@ -49,16 +47,55 @@ header h1 {
   text-decoration: underline;
 }
 
-.navbar .navbar-collapse.show {
-  display: flex !important;
-  flex-basis: auto;
+/* Boton Hamburguesa */
+
+.nav-toggle {
+  position: absolute;
+  left: -9999px;
+}
+
+/* Botón hamburguesa (visible en mobile) */
+.navbar-toggler {
+  border: 0;
+  background: none;
+  display: none; /* oculto en desktop */
+  flex-direction: column;
+  gap: 4px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.toggler-bar {
+  width: 24px;
+  height: 2px;
+  background: vars.$color-nav-link;
+  display: block;
+}
+
+/* Contenedor menú */
+.nav-menu {
+  display: flex;
   justify-content: space-between;
   width: 100%;
 }
 
-/* ===== Responsive ===== */
+/* Responsive */
+
 @media (max-width: 767.98px) {
-  /* En mobile, apila verticalmente el menú */
+  .navbar-toggler {
+    display: flex;
+  }
+
+  .nav-menu {
+    display: none;
+    width: 100%;
+    margin-top: 8px;
+  }
+
+  #nav-toggle:checked + .navbar-toggler + .nav-menu {
+    display: block;
+  }
+
   .navbar-nav {
     flex-direction: column;
     align-items: stretch;
