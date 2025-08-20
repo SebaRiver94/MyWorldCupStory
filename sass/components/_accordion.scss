@@ -1,5 +1,5 @@
-@use "variables" as vars;
-@use "mixins" as mx;
+@use "../utils/variables" as vars;
+@use "../utils/mixins" as mx;
 
 main.container-fluid .accordion-item {
   border: none;

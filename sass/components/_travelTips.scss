@@ -1,4 +1,4 @@
-@use "variables" as vars;
+@use "../utils/variables" as vars;
 
 main section:first-of-type img.img-fluid {
   max-width: 220px;

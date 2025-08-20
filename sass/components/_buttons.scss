@@ -1,17 +1,18 @@
-@use "variables" as vars;
+@use "../utils/utilities";
+@use "../utils/variables" as vars;
 
 .btn-tickets {
-  display: inline-block;
+  @extend %btn-shared;
+
   font-family: vars.$font-title;
   border: 2px solid black;
-  text-decoration: none;
   color: vars.$color-ticket-text;
   margin: 25px;
   padding: 8px 15px;
   border-radius: 5px;
   background-color: vars.$color-ticket-bg;
-}
 
-.btn-tickets:hover {
-  background-color: vars.$color-ticket-bg-hover;
+  &:hover {
+    background-color: vars.$color-ticket-bg-hover;
+  }
 }
