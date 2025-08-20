@@ -15,7 +15,9 @@ main {
   background-color: #4a8b77;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: "Orbitron", sans-serif;
   color: #c2a504;
   text-decoration: underline;
@@ -61,6 +63,86 @@ main p {
   text-align: left;
 }
 
+a:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+img {
+  display: block;
+  height: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  animation-duration: 700ms;
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(0.2, 0.65, 0.3, 1);
+}
+
+@supports (animation-timeline: view()) {
+  .reveal {
+    animation-timeline: view();
+    animation-range: entry 0% cover 35%;
+  }
+}
+/* Mapear tus data-anim */
+.reveal[data-anim=animate__fadeInLeft] {
+  animation-name: fadeInLeft;
+}
+
+.reveal[data-anim=animate__fadeInRight] {
+  animation-name: fadeInRight;
+}
+
+.reveal[data-anim=animate__fadeInUp] {
+  animation-name: fadeInUp;
+}
+
+/* Keyframes */
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
 header {
   display: flex;
   align-items: center;
@@ -475,6 +557,18 @@ main.container-fluid > section {
   }
   main.container-fluid section:first-of-type img.img-fluid {
     max-width: 180px;
+  }
+}
+.navbar .navbar-collapse.show {
+  display: flex !important;
+  flex-basis: auto;
+  justify-content: space-between;
+}
+
+@media (max-width: 767.98px) {
+  .navbar-nav {
+    flex-direction: column;
+    align-items: stretch;
   }
 }
 

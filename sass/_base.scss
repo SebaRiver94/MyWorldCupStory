@@ -12,18 +12,29 @@ main {
   padding: 40px 0;
 }
 
-.second { background-color: vars.$color-section-alt; }
+.second {
+  background-color: vars.$color-section-alt;
+}
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: vars.$font-title;
   color: vars.$color-heading;
   text-decoration: underline;
   text-align: center;
 }
 
-h1 { font-size: 3rem; margin: 0; }
-h2 { font-size: 36px; }
-h3 { font-size: 28px; }
+h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+h2 {
+  font-size: 36px;
+}
+h3 {
+  font-size: 28px;
+}
 
 p {
   font-family: vars.$font-alt;
@@ -31,9 +42,13 @@ p {
   font-size: 20px;
 }
 
-p:hover { color: vars.$color-text-hover; }
+p:hover {
+  color: vars.$color-text-hover;
+}
 
-main .row { align-items: center; }
+main .row {
+  align-items: center;
+}
 
 main .row .col img {
   width: 100%;
@@ -43,4 +58,86 @@ main .row .col img {
   margin: 8px auto;
 }
 
-main p { text-align: left; }
+main p {
+  text-align: left;
+}
+
+a:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+img {
+  display: block;
+  height: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  animation-duration: 700ms;
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(0.2, 0.65, 0.3, 1);
+}
+
+@supports (animation-timeline: view()) {
+  .reveal {
+    animation-timeline: view();
+    animation-range: entry 0% cover 35%;
+  }
+}
+
+/* Mapear tus data-anim */
+.reveal[data-anim="animate__fadeInLeft"] {
+  animation-name: fadeInLeft;
+}
+.reveal[data-anim="animate__fadeInRight"] {
+  animation-name: fadeInRight;
+}
+.reveal[data-anim="animate__fadeInUp"] {
+  animation-name: fadeInUp;
+}
+
+/* Keyframes */
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
